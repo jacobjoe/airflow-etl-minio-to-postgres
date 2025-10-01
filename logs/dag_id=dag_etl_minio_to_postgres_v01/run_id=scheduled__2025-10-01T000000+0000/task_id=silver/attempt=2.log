@@ -1,0 +1,12 @@
+{"timestamp":"2025-10-01T12:03:52.975924","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-01T12:03:52.976836","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_etl_minio_to_postgres.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-01T12:03:53.829739","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-10-01T12:03:53.848680","level":"info","event":"Connection Retrieved 'minio_conn'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-10-01T12:03:53.848928","level":"info","event":"AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from extra.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-10-01T12:03:54.426208","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-10-01T12:03:54.434636","level":"info","event":"Connection Retrieved 'minio_conn'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-10-01T12:03:54.434834","level":"info","event":"AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from extra.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-10-01T12:03:54.570789","level":"info","event":"Pushing fake data to postgres...","logger":"root"}
+{"timestamp":"2025-10-01T12:04:24.508444","level":"info","event":"Pushing field config to postgres...","logger":"root"}
+{"timestamp":"2025-10-01T12:04:24.668436","level":"info","event":"Done. Returned value was: ['silver.property', 'silver.field']","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-10-01T12:04:24.669352","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01999fa6-7d60-7e44-963a-4b0feaf14791'), task_id='silver', dag_id='dag_etl_minio_to_postgres_v01', run_id='scheduled__2025-10-01T00:00:00+00:00', try_number=2, map_index=-1, hostname='b5dfe31e776f', context_carrier=None, task=<Task(_PythonDecoratedOperator): silver>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=5, start_date=datetime.datetime(2025, 10, 1, 12, 3, 52, 892896, tzinfo=TzInfo(UTC)), end_date=None, is_mapped=False)","logger":"task"}

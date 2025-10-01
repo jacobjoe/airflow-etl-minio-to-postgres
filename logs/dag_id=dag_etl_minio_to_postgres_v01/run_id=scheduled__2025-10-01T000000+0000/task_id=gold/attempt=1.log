@@ -1,0 +1,11 @@
+{"timestamp":"2025-10-01T12:04:25.384825","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-10-01T12:04:25.385545","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_etl_minio_to_postgres.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-10-01T12:04:26.131611","level":"warning","event":"pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.","category":"UserWarning","filename":"/opt/airflow/dags/dag_etl_minio_to_postgres.py","lineno":138,"logger":"py.warnings"}
+{"timestamp":"2025-10-01T12:04:27.234104","level":"info","event":"Pushing hoa to postgres...","logger":"root"}
+{"timestamp":"2025-10-01T12:04:30.595561","level":"info","event":"Pushing taxes to postgres...","logger":"root"}
+{"timestamp":"2025-10-01T12:04:48.239632","level":"info","event":"Pushing property to postgres...","logger":"root"}
+{"timestamp":"2025-10-01T12:05:26.982427","level":"info","event":"Pushing leads to postgres...","logger":"root"}
+{"timestamp":"2025-10-01T12:06:04.651589","level":"info","event":"Pushing rehab to postgres...","logger":"root"}
+{"timestamp":"2025-10-01T12:06:37.282863","level":"info","event":"Pushing valuation to postgres...","logger":"root"}
+{"timestamp":"2025-10-01T12:07:06.922801","level":"info","event":"Done. Returned value was: All tables inserted successfully in Gold!!!","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-10-01T12:07:06.925742","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01999fa6-5b1a-78bd-b034-3404c2860617'), task_id='gold', dag_id='dag_etl_minio_to_postgres_v01', run_id='scheduled__2025-10-01T00:00:00+00:00', try_number=1, map_index=-1, hostname='b5dfe31e776f', context_carrier=None, task=<Task(_PythonDecoratedOperator): gold>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=5, start_date=datetime.datetime(2025, 10, 1, 12, 4, 25, 309812, tzinfo=TzInfo(UTC)), end_date=None, is_mapped=False)","logger":"task"}
